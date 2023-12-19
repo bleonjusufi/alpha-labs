@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .header{
     background-color: white;
     position: fixed;
@@ -11,13 +16,10 @@
     z-index: 1;
     width: 100%;
 }
-.container{
-    max-width: 1350px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 .logo img{
     max-width: 250px;
+    height: 80px;
 }
 .header-wrapper{
     display: flex;
@@ -38,7 +40,7 @@
     display: flex;
     gap: 10px;
 }
-.user-login__btn{
+.user-signup__btn{
     padding: 10px 25px;
     background-color: #605dba;
     border: none;
@@ -46,7 +48,7 @@
     color: white;
     text-decoration: none;
 }
-.user-login__btn:hover{
+.user-signup__btn:hover{
     color: #fff;
   border-color: #605dba;
   transform: translate(0, -3px);
