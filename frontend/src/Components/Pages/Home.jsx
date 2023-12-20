@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Office from '../Images/big-img.jpg';
+import Meet from '../Images/hero.png';
 import '../CSS/Home.css';
 
 function Home() {
@@ -52,6 +53,20 @@ function Home() {
                                 <div className="body-color">Alpha Labs shapes user-centric products iteratively.</div>
                             </div>
                         </a>
+                    </div>
+                </div>
+                <div className="grid-section">
+                    <div className="left-img">
+                        <img src={Meet} alt="" className="grid-img" />
+                    </div>
+                    <div className="text-area">
+                        <h2 className="text-area__title">
+                            Collect Ideas
+                        </h2>
+                        <p className="text-area__desc">Alpha Labs, the cradle of innovation, 
+                        pulsates with a mosaic of ideas that sculpt its future. Here,
+                         diverse minds converge, birthing groundbreaking advancements in 
+                         science and technology. From biotech marvels to AI frontiers, each idea illuminates the path to a transformative tomorrow</p>
                     </div>
                 </div>
             </div>
