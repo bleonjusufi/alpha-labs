@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import Office from '../Images/big-img.jpg';
 import Meet from '../Images/hero.png';
 import '../CSS/Home.css';
@@ -32,21 +33,21 @@ function Home() {
                 </div>
                 <div className="tabs-section">
                     <div className="tab-menu">
-                        <a id="tab">
+                        <a href="#" id="tab">
                             <div className="first-tab">01</div>
                             <div className="tab-inner">
                                 <h3 className="tab-desc">Collect Ideas</h3>
                                 <div className="body-color">Alpha Labs innovatively gathers diverse ideas.</div>
                             </div>
                         </a>
-                        <a id="tab">
+                        <a href="#" id="tab">
                             <div className="first-tab">02</div>
                             <div className="tab-inner">
                                 <h3 className="tab-desc">Data Analysis</h3>
                                 <div className="body-color">Alpha Labs extracts insights for informed decisions.</div>
                             </div>
                         </a>
-                        <a id="tab">
+                        <a href="#" id="tab">
                             <div className="first-tab">03</div>
                             <div className="tab-inner">
                                 <h3 className="tab-desc">Finalize Product</h3>
@@ -60,9 +61,6 @@ function Home() {
                         <img src={Meet} alt="" className="grid-img" />
                     </div>
                     <div className="text-area">
-                        <h2 className="text-area__title">
-                            Collect Ideas
-                        </h2>
                         <p className="text-area__desc">Alpha Labs, the cradle of innovation, 
                         pulsates with a mosaic of ideas that sculpt its future. Here,
                          diverse minds converge, birthing groundbreaking advancements in 
@@ -71,6 +69,7 @@ function Home() {
                 </div>
             </div>
             </div>
+            <Footer />
         </>
       );      
   }

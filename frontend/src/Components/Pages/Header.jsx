@@ -22,7 +22,7 @@ function Header() {
                 </ul>
             </div>
             <div className="registration">
-                <Link to = "/signup" className="user-signup__btn">Sign Up</Link>
+                <Link to = "/bookus" className="user-signup__btn">Book Us</Link>
             </div>
         </div>
         </div>
