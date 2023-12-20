@@ -15,7 +15,7 @@
     top: 0;
     z-index: 1;
     width: 100%;
-    border-bottom: 1px solid #605dba;
+    border-bottom: 1px solid navy;
 }
 
 .logo img{
@@ -43,15 +43,15 @@
 }
 .user-signup__btn{
     padding: 10px 25px;
-    background-color: #605dba;
+    background-color: navy;
     border: none;
     border-radius: 4px;
     color: white;
     text-decoration: none;
 }
 .user-signup__btn:hover{
-    color: #fff;
-  border-color: #605dba;
+  color: #fff;
+  border:none;
   transform: translate(0, -3px);
   box-shadow: 0 5px 15px rgba(30, 34, 40, .15);
 }
