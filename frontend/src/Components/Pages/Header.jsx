@@ -18,7 +18,6 @@ function Header() {
                     <Link to = "/facts" className="li">Facts</Link>
                     <Link to = "/careers" className="li">Careers</Link>
                     <Link to = "/about" className="li">About</Link>
-                    <Link to = "/pricing" className="li">Pricing</Link>
                 </ul>
             </div>
             <div className="registration">
