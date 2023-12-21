@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 import '../CSS/BookUs.css';
 
 function BookUs() {
-    return(
-        <body className="form-body">
-        <section className="form-container">
+  return (
+    <body className="form-body">
+      <section className="form-container">
         <header className="form-header">Booking Form</header>
         <form action="#" className="form">
           <div className="input-box">
@@ -43,13 +43,16 @@ function BookUs() {
             </div>
           </div>
           <div className="form-buttons">
-          <button id="return-button">Return to Home Page</button>
-          <button type="submit" id="submit-button">Book a consulation</button>
+            <button id="return-button">Return to Home Page</button>
+            <button type="submit" id="submit-button">
+              Book a consulation
+            </button>
           </div>
         </form>
       </section>
-      </body>
-    );
+    </body>
+  );
 }
+
 
 export default BookUs
