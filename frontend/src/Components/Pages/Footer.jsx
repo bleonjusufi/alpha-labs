@@ -53,7 +53,7 @@ function Footer() {
         </div>
         </footer>
         <div className="copyright-text">
-            <p className="copyright-text">Copyright © 2023 Alpha Labs. All rights reserved</p>
+            <p className="copyright-text"><strong>Copyright © 2023 Alpha Labs. All rights reserved</strong></p>
         </div>
         </>
     )

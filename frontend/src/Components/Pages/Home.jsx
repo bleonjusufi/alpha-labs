@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Office from '../Images/big-img.jpg';
 import Meet from '../Images/hero.png';
+import team from '../Images/developers.webp';
 import '../CSS/Home.css';
 
 function Home() {
@@ -68,6 +69,36 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <h2 className="third-section__title">Dedicated Team</h2>
+            <div className="third-section">
+                <div className="text">
+                    <p className="text-desc">Alpha Labs boasts a team of visionary trailblazers,
+                         united by a relentless passion for innovation
+                          and a shared commitment to pioneering groundbreaking solutions.
+                           Comprising brilliant minds from diverse backgrounds, 
+                           this dedicated squad thrives on collaboration, 
+                           leveraging their collective expertise to push the boundaries of technological advancement.
+                            Fuelled by creativity and a drive for excellence, 
+                            the Alpha Labs team is steadfast in its mission to redefine 
+                            possibilities and shape a future where innovation knows no bounds.</p>
+                </div>
+                <div className="right-img">
+                    <img src={team} alt="" className="third-section__img" />
+                </div>
+            </div>
+            <section className="block-section">
+                <div className="container">
+                    <div className="block-content">
+                    <span className="subtitle">Get in touch</span>
+                    <div className="title-content">
+                        <h2 className="block-section__title">Let's start <strong>building connections</strong></h2>
+                    </div>
+                    </div>
+                    <div className="block-button">
+                        <button type="submit" className="block-btn">Build your project</button>
+                    </div>
+                </div>
+            </section>
             </div>
             <Footer />
         </>

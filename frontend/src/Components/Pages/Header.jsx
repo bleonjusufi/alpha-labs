@@ -15,7 +15,6 @@ function Header() {
                 <ul className="header-navigation__list">
                     <Link to = "/" className="li">Home</Link>
                     <Link to = "/services" className="li">Services</Link>
-                    <Link to = "/facts" className="li">Facts</Link>
                     <Link to = "/careers" className="li">Careers</Link>
                     <Link to = "/about" className="li">About</Link>
                 </ul>
