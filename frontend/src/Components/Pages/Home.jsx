@@ -24,7 +24,7 @@ function Home() {
             <img src={Office} alt="Working environment" id="home-img" />
           </div>
         </div>
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="second-section">
             <div className="headline-reasons">
               <h3 className="secondary-text">Why choose us?</h3>
@@ -80,6 +80,7 @@ function Home() {
               </div>
             </div>
           </div>
+          <div className="container">
           <h2 className="third-section__title">Dedicated Team</h2>
           <div className="third-section">
             <div className="text">
@@ -99,6 +100,7 @@ function Home() {
               <img src={team} alt="" className="third-section__img" />
             </div>
           </div>
+          </div>
           <section className="block-section">
             <div className="container">
               <div className="block-content">
@@ -116,7 +118,7 @@ function Home() {
               </div>
             </div>
           </section>
-        </div>
+        {/* </div> */}
         <Footer />
       </>
     );
