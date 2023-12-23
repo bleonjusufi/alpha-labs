@@ -7,6 +7,8 @@ import AH from '../Images/AH.jpg';
 import EK from '../Images/EK.jpg';
 import MA from '../Images/MA.jpg';
 import DK from '../Images/DK.jpg';
+import LK from '../Images/LK.png';
+import EO from '../Images/EO.png';
 import '../CSS/Team.css';
 
 function Team() {
@@ -50,7 +52,7 @@ function Team() {
       id: 6,
       name: 'Leart Krasniqi',
       position: 'Front-End Developer',
-      image: 'https://via.placeholder.com/150',
+      image: LK,
       description: 'A front-end virtuoso at AlphaLabs, crafting immersive digital experiences through code and design synergy.'
     },
     {
@@ -64,7 +66,7 @@ function Team() {
       id: 8,
       name: 'Edi Oruqi',
       position: 'Social Media Manager',
-      image: 'https://via.placeholder.com/150',
+      image: EO,
       description: 'A skilled social media strategist at AlphaLabs, orchestrating engaging online narratives and community connections.'
     }
     // Add more team members here
