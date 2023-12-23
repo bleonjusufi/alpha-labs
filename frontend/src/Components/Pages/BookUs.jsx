@@ -43,7 +43,7 @@ function BookUs() {
             </div>
           </div>
           <div className="form-buttons">
-            <button id="return-button">Return to Home Page</button>
+            <Link to ='/' id="return-link">Return to Home Page</Link>
             <button type="submit" id="submit-button">
               Book a consulation
             </button>

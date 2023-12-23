@@ -19,7 +19,11 @@
   padding: 20px;
   text-align: center;
 }
-
+.team-member:hover{
+  border: 1px solid navy;
+  transform: translate(0, -4px);
+  transition: all 0.3s ease-in-out;
+}
 .team-member img {
   width: 150px; /* Set the image width */
   height: 150px; /* Set the image height */

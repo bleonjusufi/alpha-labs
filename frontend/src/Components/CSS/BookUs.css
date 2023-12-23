@@ -99,7 +99,7 @@
   }
   .form button {
     height: 55px;
-    width: 100%;
+    width: 50%;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
@@ -119,14 +119,7 @@
     gap: 20px;
     border-radius: 8px;
   }
-  #return-button{
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-  }
-  #return-button:hover{
-    background-color: red;
-    color: white;
-    border:none;
-    transition: all 0.2s ease-in-out;
+  #return-link{
+    margin-left: 85px;
+    padding-top: 45px;
   }
