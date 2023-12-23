@@ -1,34 +1,36 @@
-.team {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 100px;
-  }
-  
-  .team-member {
-    width: 23%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .team-member img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    width: 150px;
-    height: auto;
-  }
-  
-  .job-title {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .social-icons {
-    margin-top: 20px;
-  }
-  
-  .social-icons i {
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  
+.team{
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+.team-title{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-member {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px; /* Set the image width */
+  height: 150px; /* Set the image height */
+  border-radius: 50%; /* To make the images circular */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+}
+.member-position{
+  font-size: 18px;
+}
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
