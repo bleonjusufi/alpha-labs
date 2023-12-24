@@ -65,9 +65,9 @@ function Team() {
     {
       id: 8,
       name: 'Edi Oruqi',
-      position: 'Social Media Manager',
+      position: 'Junior Java Programmer',
       image: EO,
-      description: 'A skilled social media strategist at AlphaLabs, orchestrating engaging online narratives and community connections.'
+      description: 'Junior Java coder at Alpha Labs: sharp problem-solver, coding enthusiast.'
     }
     // Add more team members here
   ];
