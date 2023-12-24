@@ -1,5 +1,6 @@
 const express = require('express');
 const { connectToMongoDB } = require('./db'); 
+const authenticateByEmail = require('./middleware/authenticateByEmail');
 const app = express();
 
 
@@ -14,6 +15,22 @@ connectToMongoDB()
   })
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
+  });
+  app.post('/authenticate', (req, res) => {
+    const { email } = req.body;
+  
+    if (allowedEmails.includes(email)) {
+      // If the email is allowed, send a success response or redirect to admin dashboard
+      res.status(200).json({ message: 'Authentication successful' });
+    } else {
+      // If the email is not allowed, send a 401 Unauthorized response
+      res.status(401).json({ message: 'Unauthorized access' });
+    }
+  });
+  // Route protected by email-based authentication
+app.get('/admin-dashboard', authenticateByEmail, (req, res) => {
+    // Accessible only if email-based authentication allows
+    res.send('Access granted to admin dashboard');
   });
 
 // Test endpoint to check MongoDB connection
