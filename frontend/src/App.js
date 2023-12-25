@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Components/Pages/Home';
 import BookUs from "./Components/Pages/BookUs";
@@ -8,10 +9,12 @@ import Team from "./Components/Pages/Team";
 import Services from "./Components/Pages/Services";
 import AdminLogin from "./Components/Admin/AdminLogin";
 import AdminDashboard from "./Components/Admin/AdminDashboard";
-// import ProtectedRoute from "./routes/ProtectedRoute";
+import ProtectedRoute from "./Components/Admin/ProtectedRoute";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
+
     <>
       <Router>
         <ScrollToTop />
@@ -22,7 +25,7 @@ function App() {
           <Route path='/team' element ={<Team />} />
           <Route path='/services' element ={<Services />} />
           <Route path='/admin-login' element ={<AdminLogin />} />
-          <Route path="/admin-dashboard" element={<AdminDashboard />} />        
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
         </Routes>
       </Router>
     </>

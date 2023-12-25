@@ -1,39 +1,36 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+// AdminLogin.js
 
-const AdminLogin = () => {
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+function AdminLogin() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {
-    try {
-      const response = await axios.post('/api/auth/login', { email });
-      const { token } = response.data;
-      
-      // Store token in local storage for further authentication
-      localStorage.setItem('authToken', token);
-      
-      // Redirect to admin dashboard upon successful login
-      navigate('/admin-dashboard');
-    } catch (error) {
-      setError(error.response.data.error || 'Login failed');
+  const handleLogin = () => {
+    // Perform validation (e.g., against stored credentials or an API)
+    // For simplicity, the example checks hardcoded credentials
+    if (email === "bjusufi7@gmail.com" && password === "donerkebap") {
+      setLoggedIn(true);
+      navigate('/admin-dashboard'); // Redirect to Dashboard if logged in
+    } else {
+      alert("Invalid credentials. Please try again.");
     }
   };
 
   return (
-    <div>
-      <input
-        type="email"
-        placeholder="Enter email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
-      {error && <p>{error}</p>}
+    <div className="admin-login">
+      <div className="admin-form">
+        <label htmlFor="email">Enter email:</label><br />
+        <input type="email" placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)} /><br />
+        <label htmlFor="password">Enter password:</label><br />
+        <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /><br />
+        <button type="button" onClick={handleLogin}>Login</button>
+      </div>
     </div>
   );
-};
+}
 
 export default AdminLogin;
