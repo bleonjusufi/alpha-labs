@@ -8,6 +8,7 @@ import Team from "./Components/Pages/Team";
 import Services from "./Components/Pages/Services";
 import AdminLogin from "./Components/Admin/AdminLogin";
 import AdminDashboard from "./Components/Admin/AdminDashboard";
+// import ProtectedRoute from "./routes/ProtectedRoute";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path='/team' element ={<Team />} />
           <Route path='/services' element ={<Services />} />
           <Route path='/admin-login' element ={<AdminLogin />} />
-          <Route path='/admin-dashboard' element ={<AdminDashboard />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />        
         </Routes>
       </Router>
     </>

@@ -1,31 +1,39 @@
-// Form component to collect email
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 const AdminLogin = () => {
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-      const email = event.target.email.value;
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+
+  const handleLogin = async () => {
+    try {
+      const response = await axios.post('/api/auth/login', { email });
+      const { token } = response.data;
       
-      // Send the email to the server for authentication
-      try {
-        const response = await fetch('/authenticate', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ email }),
-        });
-  
-        // Handle response - Redirect to admin dashboard if authenticated
-      } catch (error) {
-        // Handle error
-      }
-    };
-  
-    return (
-      <form onSubmit={handleSubmit}>
-        <input type="email" name="email" placeholder="Enter email" required />
-        <button type="submit">Submit</button>
-      </form>
-    );
+      // Store token in local storage for further authentication
+      localStorage.setItem('authToken', token);
+      
+      // Redirect to admin dashboard upon successful login
+      navigate('/admin-dashboard');
+    } catch (error) {
+      setError(error.response.data.error || 'Login failed');
+    }
   };
-  
-  export default AdminLogin
+
+  return (
+    <div>
+      <input
+        type="email"
+        placeholder="Enter email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <button onClick={handleLogin}>Login</button>
+      {error && <p>{error}</p>}
+    </div>
+  );
+};
+
+export default AdminLogin;

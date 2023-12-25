@@ -1,6 +1,6 @@
 const express = require('express');
 const { connectToMongoDB } = require('./db'); 
-const authenticateByEmail = require('./middleware/authenticateByEmail');
+const authenticateByEmail = require('../backend/src/middleware/authenticateByEmail');
 const app = express();
 
 
