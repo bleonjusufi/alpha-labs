@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../Pages/Header";
 
-function Admin(){
+function Admin() {
     return(
         <>
-        <Header/>
+            <Header />
         </>
     )
 }
