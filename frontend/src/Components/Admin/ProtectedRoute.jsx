@@ -10,7 +10,7 @@ const ProtectedRoute = ({ element: Element, isLoggedIn, ...rest }) => {
         isLoggedIn ? (
           <Element />
         ) : (
-          <Navigate to="/admin/login" replace />
+          <Navigate to="/admin-login" replace />
         )
       }
     />
