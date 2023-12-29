@@ -9,6 +9,7 @@ import Services from "./Components/Pages/Services";
 import AdminSignUp from "./Components/Admin/AdminSignup";
 import AdminLogin from "./Components/Admin/AdminLogin";
 import AdminDashboard from "./Components/Admin/AdminDashboard";
+import About from "./Components/Pages/About";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/admin-signup" element={<AdminSignUp/>} />
           <Route path='/admin-login' element ={<AdminLogin />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>
